@@ -1,0 +1,470 @@
+@font-face {
+    font-family: Founder;
+    src: url(./fonts/FoundersGroteskCondensed-Bold.woff2);
+}
+
+@font-face {
+    font-family: CardinalR;
+    src: url(./fonts/cardinalfruitweb-regular.woff2);
+}
+
+@font-face {
+    font-family: CardinalI;
+    src: url(./fonts/cardinalfruitweb-italic.woff2);
+}
+
+@font-face {
+    font-family: FounderN;
+    src: url(./fonts/FoundersGrotesk.woff2);
+}
+
+@font-face {
+    font-family: FounderS;
+    src: url(./fonts/FoundersGrotesk-Semibold.woff2);
+}
+
+@font-face {
+    font-family: Lemiesz;
+    src: url(./fonts/AnotherOne/Lemiesz/Lemiesz.ttf);
+}
+
+@font-face {
+    font-family: Robot;
+    src: url(./fonts/AnotherOne/Roboto/QuirkyRobot.ttf);
+}
+
+@font-face {
+    font-family: cakeC;
+    src: url(./fonts/AnotherOne/cakeCafe/Cakecafe.ttf);
+}
+
+* {
+    margin: 0;
+    /* padding: 0; */
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main-p {
+    width: 100%;
+    height: 100vh;
+    /* background-color: rosybrown; */
+    background-color: #313130;
+
+    & .h2 {
+        display: flex;
+        justify-content: space-around;
+        text-transform: uppercase;
+        /* align-items: center; */
+        padding-top: 3px;
+        /* padding: 0; */
+
+        & h2 {
+            letter-spacing: 0.78rem;
+        }
+
+        /* background: rgb(169, 155, 205); */
+        /* background: rgb(63, 62, 62); */
+        /* color: rgb(63, 62, 62); */
+
+    }
+}
+
+/* first - Bappa gallery */
+.first-gallery {
+    width: 99%;
+    margin: auto;
+    height: 95vh;
+    background-color: rgb(56, 53, 53);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 0.67rem;
+    /* margin-bottom: 7px; */
+    overflow: hidden;
+}
+
+.gd {
+    /* border: 4px solid rgba(128, 5, 236, 0.954); */
+    background-color: rgb(22, 234, 185);
+    /* background: url("./images/Artistics/Shiv-Gana.jpg")no-repeat center center/cover; */
+    padding: 17px;
+    box-shadow: 0px 0px 4px black;
+    opacity: 0.67;
+    overflow: hidden;
+}
+
+.img-1 {
+    background: url("./images/Artistics/peaceGreenAbstract-Ganesha\ Painting.jpg");
+    background-position: 28% 24.16%;
+    background-size: cover;
+    grid-column: 5 / span2;
+    grid-row: 1 / span 2;
+}
+
+.img-2 {
+    background: url("./images/Artistics/artisticsPainting-Bappa.jpg");
+    background-position: center 18%;
+    background-size: cover;
+    grid-column: 1/span 2;
+    grid-row: 2/span 3;
+    opacity: 0.58;
+}
+
+.img-3 {
+    background: url("./images/Artistics/GreenyOne.jpg");
+    background-position: center 29%;
+    background-size: 148%;
+    grid-column: 3 / span 1;
+    grid-row: 2/span 3;
+    opacity: 0.41;
+}
+
+.img-4 {
+    background: url("./images/Landscape/BappaSitara.jpg");
+    background-position: center 21%;
+    /* background-repeat: no-repeat; */
+    background-size: 85%;
+    grid-column: 5/ span2;
+    grid-row: 3;
+    opacity: 0.46;
+    border-radius: 78% 38%;
+}
+
+.img-5 {
+    background: url("./images/Artistics/potraitOne.jpg");
+    background-position: center center;
+    background-size: 126%;
+    grid-column: 4 / span 1;
+    grid-row: 1/ span 3;
+    /* opacity: 0.2; */
+}
+
+.img-6 {
+    /* background: url("./images/Landscape/Ganesh\ Painting\,\ ananda\ goswami.jpg"); */
+    background: url("./images/Landscape/Ganeshay-1.png");
+    background-position: center 62%;
+    background-size: 112%;
+    grid-column: 4/ span2;
+    grid-row: 4/ span 1;
+    opacity: 8;
+}
+
+.img-7 {
+    /* background: url("./images/Artistics/Rishi-Bappa.jpg"); */
+    /* background: url("./images/Landscape/Ganeshay-1.png");
+    background-position: center center;
+    background-size: cover;
+    grid-column: 1/ span 2;
+    grid-row: 4; */
+}
+
+.img-8 {
+    background: url("./images/Landscape/Ganeshay-3.png");
+    /* background: url("./images/Artistics/potraitOne.jpg"); */
+    background-position: 30% 20%;
+    background-size: 105%;
+    grid-column: 1/ span 3;
+    grid-row: 1;
+}
+
+.img-9 {
+    background: url("./images/Artistics/Sindur-Gana.jpg");
+}
+
+.img-10 {
+    background: url("./images/Artistics/yellowArt-Bappa.jpg");
+}
+
+#main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* background-color:aquamarine;
+    Add Bappa landscape image here */
+    background: url('./images/Landscape/Ganeshay-3.png');
+    background: top;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#top {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 50vh;
+    /* background-color: greenyellow; */
+    /* background-color: #fff; */
+    background-color: rgb(53, 52, 52);
+    z-index: 9;
+    overflow: hidden;
+}
+
+#center {
+    position: relative;
+    width: 100%;
+    height: 200vh;
+    transform-origin: center;
+    background-color: black;
+    /* background: url("./images/Landscape/Ganeshay-3.png"); */
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+    overflow: hidden;
+}
+
+#bottom {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 50vh;
+    /* background-color: orchid; */
+    /* background-color: #fff; */
+    background-color: rgb(53, 52, 52);
+    overflow: hidden;
+}
+
+#main h1 {
+    font-family: Founder;
+    text-transform: uppercase;
+    font-size: 22vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cent-t {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: start;
+    align-items: center;
+    /* background: tan; */
+    gap: 4vh;
+    /* top: auto; */
+    margin-top: 6.31rem;
+    /* margin-left: 27rem; */
+    margin-left: 16rem;
+
+    h6 {
+        font-size: 6vw;
+    }
+}
+
+.cent-b {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* background: olive; */
+    margin-top: 7rem;
+    margin-left: 78.23vw;
+    /* position: fixed;  */
+
+    h6 {
+        padding-left: 3vw;
+        font-size: 4.48vw;
+    }
+}
+
+#top-h1 {
+    bottom: 19%;
+    /* bottom: 50%; */
+}
+
+#bottom-h1 {
+    /* top: 0.81% !important; */
+    top: -2.48% !important;
+}
+
+.content {
+    /* position: absolute; */
+    margin-top: 100vh;
+    /* background: indianred; */
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* width: 100%; */
+    /* height: 100vh; */
+    font-family: CardinalR;
+    /* font-size: 8vw; */
+    color: rgb(62, 61, 61);
+    /* border-bottom: 0.012vh solid gray; */
+}
+
+
+.content-info {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 16.3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.83vh;
+    /* background: rgb(22, 234, 185); */
+    margin-bottom: 0.34vh;
+    text-transform: uppercase;
+    /* border-bottom: 0.0001vh solid gray; */
+
+    & h2 {
+        font-size: 1.34vw;
+        /* font-family: Lemiesz; */
+        font-family: Robot;
+        letter-spacing: 0.27vw;
+        /* margin-bottom: 0.62vh; */
+    }
+
+    & h6 {
+        font-size: 1.89vw;
+        /* font-family: CardinalR; */
+        font-family: FounderS;
+        /* font-family: cakeC; */
+        /* font-weight: bolder; */
+        /* font-family: Robot; */
+        letter-spacing: 0.47vw;
+    }
+
+    & h4 {
+        font-family: Robot;
+        /* font-family: FounderS; */
+        font-size: 2vw;
+        letter-spacing: 0.46vw;
+    }
+}
+
+.content-one {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1vw;
+    /* border-bottom: 0.2vh solid rgb(52, 51, 51); */
+    margin: 0.43vh;
+    /* background: #f3a0a0; */
+    width: 32.42vw;
+    /* height: 15.45vh; */
+    padding: 0.65rem;
+    color: gray;
+    /* margin-bottom: 0.86rem; */
+}
+
+.content-one h4 {
+    font-size: 1vw;
+    letter-spacing: 0.15vw;
+    font-family: FounderR;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.content-one h3 {
+    width: 21vw;
+    font-size: 1.43vw;
+    font-family: CardinalI;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 0.13vw;
+}
+
+.content-one .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    padding: 1.23vw;
+    height: 2vw;
+    /* border-radius: 50px; */
+    background-color: #d7d3d3;
+    color: #0d0d0d;
+    font-family: Founder;
+    border: none;
+    /* word-spacing: 0.12vw; */
+    letter-spacing: 0.11vw;
+    transition: 0.72s ease-out;
+
+    &:hover {
+        cursor: pointer;
+        color: rgb(231, 230, 230);
+        /* transform: translate(0.78vw); */
+        transition: 0.72s ease-in;
+        /* background: black; */
+        /* border: 0.12vh solid gray; */
+        /* box-shadow: inset 10.5em 0 0 0 #4a4949, inset -10.5em 0 0 0 #4e4c4c; */
+    }
+
+}
+
+.btn-right:hover {
+    /* transform: translate(0.78vw); */
+    box-shadow: inset 18.5em 0 0 0 #5b5a5a;
+}
+
+
+.btn-left:hover {
+    /* transform: translate(-0.68vw); */
+    box-shadow: inset -18.5em 0 0 0 #4a4949, inset -18.5em 0 0 0 #4e4c4c;
+}
+
+.content-one h2 {
+    font-size: 1.38vw;
+    letter-spacing: 0.067vw;
+    font-weight: 78;
+    font-family: Lemiesz;
+}
+
+
+
+.mantras {
+    display: flex;
+    gap: 0.33vw;
+    /* background: teal; */
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 0.32vw;
+    padding-top: 0.81vh;
+
+    h6 {
+        /* border-radius: 0.8vw 0 0 0.8vw; */
+        border-radius: 56%;
+        padding: 0.34rem;
+        font-size: 1.22vw;
+        background: white;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    h3 {
+        /* padding: 0.37rem; */
+        padding-left: 0.58rem;
+        padding-right: 0.48rem;
+        background: #424141;
+        border: none;
+        color: black;
+        font-size: 1vw;
+        border-radius: 8vw 4vh 4vh 8vw;
+        font-family: FounderN;
+        transition: 0.7s ease-in-out;
+    }
+
+
+}
+
+.mantras h6:hover+h3 {
+
+    /* background: white; */
+    /* transform: translate(0.78vw); */
+    box-shadow: inset 36.78em 0 0 0 #ffffff;
+    /* color: black; */
+    /* border-radius: 0 0.8vw 0.8vw 0; */
+    transition: 0.8s ease-in-out;
+}
