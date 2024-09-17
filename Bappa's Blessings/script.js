@@ -1,3 +1,7 @@
+alert("गणपति बप्पा मोरया");
+
+
+
 var timeL = gsap.timeline({
     scrollTrigger: {
         trigger: "#main",
